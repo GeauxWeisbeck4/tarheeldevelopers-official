@@ -4,51 +4,52 @@ import { Icon } from "astro-icon";
 
 const features = [
   {
-    title: "Bring Your Own Framework",
+    title: "Full-Stack Application Development",
     description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
+      "Bring your requirements because we work with almost any framework and most languages to build your next app.",
     icon: "bx:bxs-briefcase",
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "SEO Content Planning + Creation",
     description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
+      "We are SEO experts and can help you plan and create content that engages your target audience.",
     icon: "bx:bxs-window-alt",
   },
   {
-    title: "On-Demand Components",
+    title: "Web and Graphic Design Services",
     description:
-      "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.  ",
+      "Not only will we design your websites components, but we also design your ads, infographics, or whatever digital creation you need.",
     icon: "bx:bxs-data",
   },
   {
-    title: "Broad Integration",
+    title: "Ecommerce Store Development and Consulting",
     description:
-      "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
+      "With over a decade of ecommerce experience, we can take you from ideation all the way to mature growth stages.",
     icon: "bx:bxs-bot",
   },
   {
-    title: "SEO Enabled",
+    title: "Digital Marketing & Business Strategy",
     description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
+      "No matter what your product is, we can help you with a total digital approach, helping you achieve success at each phase of its life cycle.",
     icon: "bx:bxs-file-find",
   },
   {
-    title: "Community",
+    title: "Problem Solving and Tool Building",
     description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
+      "We help solve many problems, from brand recognition issues all the way to cybersecurity network hardening solutions - our technical prowess is vast so just tell us what you need!",
     icon: "bx:bxs-user",
   },
 ];
 ---
 
 <div class="mt-16 md:mt-0">
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Everything you need to start a website
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-[#063e5d]">
+    We have everything a digital business needs to succeed
   </h2>
   <p class="text-lg mt-4 text-slate-600">
-    Astro comes batteries included. It takes the best parts of state-of-the-art
-    tools and adds its own innovations.
+    We are a full-service digital agency, capable of serving our clients in every aspect of their strategy whether its
+    app/website development, cybersecurity, or digital marketing, our diverse and extensive experience allows us to cater
+    to your every need while understanding your very unique needs as a business.
   </p>
 </div>
 
@@ -56,11 +57,11 @@ const features = [
   {
     features.map((item) => (
       <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+        <div class="mt-1 bg-[#063e5d] rounded-full  p-2 w-8 h-8 shrink-0">
           <Icon class="text-white" name={item.icon} />
         </div>
         <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <h3 class="font-semibold text-lg text-[#063e5d]">{item.title}</h3>{" "}
           <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
         </div>
       </div>

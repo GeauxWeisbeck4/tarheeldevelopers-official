@@ -1,6 +1,6 @@
 ---
 import { Picture } from "@astrojs/image/components";
-import heroImage from "assets/hero.png";
+import heroImage from "assets/thdslogo.png";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
 ---
@@ -10,44 +10,41 @@ import { Icon } from "astro-icon";
   <div class="py-6 md:order-1 hidden md:block">
     <Picture
       src={heroImage}
-      alt="Astronaut in the air"
+      alt="Tar Heel Dev Studio logo"
       widths={[200, 400, 600]}
-      aspectRatio="4:3"
-      sizes="(max-width: 800px) 100vw, 620px"
+      aspectRatio="1:1"
+      sizes="(max-width: 500px) 100vw, 500px"
       loading="eager"
       format="avif"
     />
   </div>
   <div>
     <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Marketing website done with Astro
+      class="text-5xl text-[#063e5d] lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
+      Digital Solutions that Kick Ass
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly create
-      any website with this starter.
+      We are a dynamic and innovative freelance web development studio, dedicated to transforming your digital dreams into reality. Whether you're looking to boost your online presence, develop a captivating mobile app, enhance your brand strategy, or create stunning graphic designs, we've got you covered.
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
-        href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
+        href="/contact"
         target="_blank"
-        class="flex gap-1 items-center justify-center"
+        class="flex hover:bg-[#23aadc] gap-1 items-center justify-center"
         rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
+        <Icon class="text-white w-5 h-5" name="mdi:foot-print" />
 
-        Download for Free
+        Let's Talk!
       </Link>
       <Link
         size="lg"
         style="outline"
         rel="noopener"
-        href="https://github.com/surjithctly/astroship"
+        href="/about"
         class="flex gap-1 items-center justify-center"
         target="_blank">
         <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-        GitHub Repo
+        Learn More
       </Link>
     </div>
   </div>
